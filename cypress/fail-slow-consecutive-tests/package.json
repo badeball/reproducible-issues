@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "node server.js",
+    "cypress": "cypress run",
+    "test": "start-test start :8080 cypress"
+  },
+  "dependencies": {
+    "cypress": "^4.2.0",
+    "start-server-and-test": "^1.10.11"
+  }
+}

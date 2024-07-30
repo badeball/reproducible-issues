@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script>
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  async function sendRequest() {
+    await sleep(500);
+
+    const response = await fetch("/api/foo", {
+      method: "POST",
+      body: "bar z0mg"
+    });
+
+    document.getElementById("response-container").innerText = response.status + " " + response.statusText;
+  }
+</script>
+<p>
+  <button onclick="sendRequest()">Send</button>
+</p>
+<p>
+  Response: <span id="response-container">waiting...</span>
+</p>

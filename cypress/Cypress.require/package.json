@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "latest",
+    "cypress": "latest"
+  }
+}

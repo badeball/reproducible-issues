@@ -1,0 +1,5 @@
+{
+  "name": "exampe-module",
+  "type": "module",
+  "main": "index.js"
+}
